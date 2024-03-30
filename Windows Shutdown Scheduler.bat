@@ -1,7 +1,12 @@
 @echo off
+:: Clear scheduled
+shutdown -a
+cls
+
 set /p hours=Enter number of hours: 
 set /p minutes=Enter number of minutes: 
 set /p seconds=Enter number of seconds:
+cls
 
 :: Calculate total seconds
 set /a total_seconds=(hours*3600)+(minutes*60)+seconds
